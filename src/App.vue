@@ -1,14 +1,13 @@
 <template>
-  <div class="login-container">
-    <el-form ref="formRef" :model="form">
-      <el-form-item>
-        <el-input v-model="form.name"></el-input>
-      </el-form-item>
-    </el-form>
+  <div id="app">
+    <router-view></router-view>
   </div>
 </template>
-<script setup>
-import { ref } from 'vue'
-const form = ref({})
-</script>
-<style lang="scss"></style>
+
+<script></script>
+
+<style lang="scss">
+.el-message-box__status {
+  position: absolute !important;
+}
+</style>
